@@ -9,6 +9,8 @@
 #ifndef ShooIM_SAMPrefixHeader_pch
 #define ShooIM_SAMPrefixHeader_pch
 
+#import "MBProgressHUD+SAM.h"
+
 #ifdef DEBUG
 #define SAMLog(...) NSLog(__VA_ARGS__)
 #else
