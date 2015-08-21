@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SAMMainViewController">
+            <connections>
+                <outlet property="view" destination="FJI-Wy-dm3" id="cxN-5o-2q8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="FJI-Wy-dm3">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d37-Uh-koB">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaf-Xl-xyC">
+                            <rect key="frame" x="147" y="262" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="jhl-x0-Mcr"/>
+                                <constraint firstAttribute="width" constant="80" id="wbr-h2-veX"/>
+                            </constraints>
+                            <state key="normal" image="btn_notice">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NRo-yU-ykj">
+                            <rect key="frame" x="0.0" y="0.0" width="147" height="603"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghH-fN-MrU">
+                                    <rect key="frame" x="33" y="261" width="80" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="80" id="j0Z-EV-FqA"/>
+                                        <constraint firstAttribute="height" constant="80" id="kDt-qD-Ywr"/>
+                                    </constraints>
+                                    <state key="normal" image="btn_account">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="centerY" secondItem="ghH-fN-MrU" secondAttribute="centerY" id="4rm-Cf-L1l"/>
+                                <constraint firstAttribute="centerX" secondItem="ghH-fN-MrU" secondAttribute="centerX" id="xZO-mX-5sg"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWY-SE-5Ms">
+                            <rect key="frame" x="227" y="0.0" width="147.5" height="603"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCG-sl-O2w">
+                                    <rect key="frame" x="34" y="261" width="80" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="80" id="Wi4-g5-jX1"/>
+                                        <constraint firstAttribute="height" constant="80" id="bUZ-Xh-GRE"/>
+                                    </constraints>
+                                    <state key="normal" image="btn_merchant">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="centerY" secondItem="gCG-sl-O2w" secondAttribute="centerY" id="Jjd-wY-aGM"/>
+                                <constraint firstAttribute="centerX" secondItem="gCG-sl-O2w" secondAttribute="centerX" id="hNK-x1-s51"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8b-U8-LI8">
+                            <rect key="frame" x="0.0" y="342" width="375" height="261"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVI-0O-wlQ">
+                                    <rect key="frame" x="147" y="90" width="80" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="80" id="HGO-JI-kwC"/>
+                                        <constraint firstAttribute="width" constant="80" id="jZk-v3-f1R"/>
+                                    </constraints>
+                                    <state key="normal" image="btn_addfriends">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjh-OM-aPT">
+                                    <rect key="frame" x="33" y="90" width="80" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="80" id="JJ9-9u-XF7"/>
+                                        <constraint firstAttribute="height" constant="80" id="KXU-W4-rTM"/>
+                                    </constraints>
+                                    <state key="normal" image="btn_map">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LfO-qW-nbB">
+                                    <rect key="frame" x="261" y="90" width="80" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="80" id="ede-um-dHi"/>
+                                        <constraint firstAttribute="height" constant="80" id="j3L-tU-3im"/>
+                                    </constraints>
+                                    <state key="normal" image="btn_setup">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="centerX" secondItem="EVI-0O-wlQ" secondAttribute="centerX" id="PJy-SH-eUN"/>
+                                <constraint firstItem="LfO-qW-nbB" firstAttribute="centerY" secondItem="EVI-0O-wlQ" secondAttribute="centerY" id="SXu-Op-nB1"/>
+                                <constraint firstAttribute="centerY" secondItem="EVI-0O-wlQ" secondAttribute="centerY" id="ldt-Bh-jOs"/>
+                                <constraint firstItem="EVI-0O-wlQ" firstAttribute="centerY" secondItem="wjh-OM-aPT" secondAttribute="centerY" id="xrd-g4-fnS"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="NRo-yU-ykj" firstAttribute="leading" secondItem="d37-Uh-koB" secondAttribute="leading" id="2Ka-Wg-gvm"/>
+                        <constraint firstAttribute="bottom" secondItem="xWY-SE-5Ms" secondAttribute="bottom" id="4nR-s9-Wq2"/>
+                        <constraint firstItem="uaf-Xl-xyC" firstAttribute="leading" secondItem="NRo-yU-ykj" secondAttribute="trailing" id="8f2-Oi-GZj"/>
+                        <constraint firstItem="NRo-yU-ykj" firstAttribute="top" secondItem="d37-Uh-koB" secondAttribute="top" id="AFU-c4-9BX"/>
+                        <constraint firstItem="xWY-SE-5Ms" firstAttribute="leading" secondItem="uaf-Xl-xyC" secondAttribute="trailing" id="Aiq-tn-fmA"/>
+                        <constraint firstAttribute="centerY" secondItem="uaf-Xl-xyC" secondAttribute="centerY" id="Bnc-RJ-Yxd"/>
+                        <constraint firstAttribute="centerX" secondItem="uaf-Xl-xyC" secondAttribute="centerX" id="EZv-gr-D2X"/>
+                        <constraint firstItem="gCG-sl-O2w" firstAttribute="centerX" secondItem="LfO-qW-nbB" secondAttribute="centerX" id="GGy-SR-Utf"/>
+                        <constraint firstItem="H8b-U8-LI8" firstAttribute="top" secondItem="uaf-Xl-xyC" secondAttribute="bottom" id="Leb-82-9bO"/>
+                        <constraint firstAttribute="trailing" secondItem="xWY-SE-5Ms" secondAttribute="trailing" id="NKU-k4-zxI"/>
+                        <constraint firstAttribute="trailing" secondItem="H8b-U8-LI8" secondAttribute="trailing" id="Qbi-1s-HRb"/>
+                        <constraint firstAttribute="bottom" secondItem="NRo-yU-ykj" secondAttribute="bottom" id="cAs-gr-YWY"/>
+                        <constraint firstItem="H8b-U8-LI8" firstAttribute="leading" secondItem="d37-Uh-koB" secondAttribute="leading" id="hsZ-cY-4pP"/>
+                        <constraint firstAttribute="bottom" secondItem="H8b-U8-LI8" secondAttribute="bottom" id="jsO-h6-NNk"/>
+                        <constraint firstItem="xWY-SE-5Ms" firstAttribute="top" secondItem="d37-Uh-koB" secondAttribute="top" id="qrA-Jc-Drt"/>
+                        <constraint firstItem="ghH-fN-MrU" firstAttribute="centerX" secondItem="wjh-OM-aPT" secondAttribute="centerX" id="vIQ-RN-QnA"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bo6-Qk-DrA">
+                    <rect key="frame" x="0.0" y="64" width="375" height="262"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOA-uX-U6G">
+                            <rect key="frame" x="33" y="91" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="fmf-ci-poI"/>
+                                <constraint firstAttribute="height" constant="80" id="ku6-KN-lv4"/>
+                            </constraints>
+                            <state key="normal" image="btn_friends">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkY-qQ-uKo">
+                            <rect key="frame" x="147" y="91" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="0A5-vp-Kpa"/>
+                                <constraint firstAttribute="height" constant="80" id="ChJ-JI-ofD"/>
+                            </constraints>
+                            <state key="normal" image="btn_message">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvw-op-A8y">
+                            <rect key="frame" x="261" y="91" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="QID-o1-ZOz"/>
+                                <constraint firstAttribute="width" constant="80" id="liG-1k-cTm"/>
+                            </constraints>
+                            <state key="normal" image="btn_group">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="hvw-op-A8y" firstAttribute="centerY" secondItem="WkY-qQ-uKo" secondAttribute="centerY" id="9cg-vU-iu0"/>
+                        <constraint firstAttribute="centerX" secondItem="WkY-qQ-uKo" secondAttribute="centerX" id="DdQ-so-YVx"/>
+                        <constraint firstItem="WkY-qQ-uKo" firstAttribute="centerY" secondItem="vOA-uX-U6G" secondAttribute="centerY" id="aN2-qc-52m"/>
+                        <constraint firstAttribute="centerY" secondItem="WkY-qQ-uKo" secondAttribute="centerY" id="h6k-1k-nHB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.99607843139999996" green="0.76470588240000004" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="bo6-Qk-DrA" firstAttribute="top" secondItem="FJI-Wy-dm3" secondAttribute="top" constant="64" id="5YG-S3-6e0"/>
+                <constraint firstAttribute="trailing" secondItem="bo6-Qk-DrA" secondAttribute="trailing" id="DF0-jK-raG"/>
+                <constraint firstAttribute="bottom" secondItem="d37-Uh-koB" secondAttribute="bottom" id="PSM-eW-fO3"/>
+                <constraint firstItem="gCG-sl-O2w" firstAttribute="centerX" secondItem="hvw-op-A8y" secondAttribute="centerX" id="Tae-qX-neE"/>
+                <constraint firstItem="bo6-Qk-DrA" firstAttribute="leading" secondItem="FJI-Wy-dm3" secondAttribute="leading" id="XUb-qz-Hnw"/>
+                <constraint firstAttribute="trailing" secondItem="d37-Uh-koB" secondAttribute="trailing" id="YK3-wx-gNc"/>
+                <constraint firstItem="uaf-Xl-xyC" firstAttribute="top" secondItem="WkY-qQ-uKo" secondAttribute="bottom" id="aem-oG-BXW"/>
+                <constraint firstItem="d37-Uh-koB" firstAttribute="leading" secondItem="FJI-Wy-dm3" secondAttribute="leading" id="jaN-N2-faK"/>
+                <constraint firstItem="ghH-fN-MrU" firstAttribute="centerX" secondItem="vOA-uX-U6G" secondAttribute="centerX" id="n3F-rM-bVG"/>
+                <constraint firstItem="d37-Uh-koB" firstAttribute="top" secondItem="FJI-Wy-dm3" secondAttribute="top" constant="64" id="rry-Yf-cyY"/>
+                <constraint firstItem="uaf-Xl-xyC" firstAttribute="top" secondItem="bo6-Qk-DrA" secondAttribute="bottom" id="zNC-Xv-ifn"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="aem-oG-BXW"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="319.5" y="310.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_account" width="369" height="369"/>
+        <image name="btn_addfriends" width="369" height="369"/>
+        <image name="btn_friends" width="369" height="369"/>
+        <image name="btn_group" width="369" height="369"/>
+        <image name="btn_map" width="369" height="369"/>
+        <image name="btn_merchant" width="369" height="369"/>
+        <image name="btn_message" width="369" height="369"/>
+        <image name="btn_notice" width="369" height="369"/>
+        <image name="btn_setup" width="369" height="369"/>
+    </resources>
+</document>
