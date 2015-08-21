@@ -7,6 +7,7 @@
 //
 
 #import "SAMNavgationController.h"
+#import "SAMMainViewController.h"
 
 @interface SAMNavgationController ()<UIGestureRecognizerDelegate>
 
@@ -41,23 +42,16 @@
 }
 
 #pragma mark - 手势代理方法
-// 是否开始触发手势
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
 {
-    // 判断下当前控制器是否是跟控制器
-    
-    return (self.topViewController != [self.viewControllers firstObject]);
+    return (![self.topViewController isKindOfClass:[SAMMainViewController class]]);
 }
 
-// self -> 导航控制器
+
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    if (self.viewControllers.count != 0) { // 非跟控制器hi
-        viewController.hidesBottomBarWhenPushed = YES;
-        
-        // 设置导航条左边按钮的内容,把系统的返回按钮给覆盖,导航控制器的滑动返回功能就木有啦
-        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleBordered target:self action:@selector(back)];
-    }
+    // 设置导航条左边按钮的内容,把系统的返回按钮给覆盖,导航控制器的滑动返回功能就木有啦
+    viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleBordered target:self action:@selector(back)];
     
     [super pushViewController:viewController animated:animated];
 }

@@ -16,6 +16,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *birthdayTextField;
 @property (weak, nonatomic) IBOutlet UITextField *pwdTextField;
 
+@property (nonatomic, weak) UIDatePicker *datePicker;
+
 /** 存放所有数组 */
 @property (nonatomic, strong) NSArray *textFields;
 
@@ -31,7 +33,44 @@
  
     self.navigationItem.title = @"註冊";
     self.textFields = @[self.mailTextField,self.phoneNumTextField,self.userNameTextField,self.birthdayTextField,self.pwdTextField];
+    
+    [self setUpBirthdayKeyboard];
 }
+
+// 自定义生日键盘
+- (void)setUpBirthdayKeyboard
+{
+    // 创建UIDatePicker
+    UIDatePicker *picker = [[UIDatePicker alloc] init];
+    
+    _datePicker = picker;
+    
+    // 设置地区 zh:中国
+    picker.locale = [NSLocale localeWithLocaleIdentifier:@"zh"];
+    
+    // 设置日期的模式
+    picker.datePickerMode = UIDatePickerModeDate;
+    
+    // 监听UIDatePicker的滚动
+    [picker addTarget:self action:@selector(dateChange:) forControlEvents:UIControlEventValueChanged];
+    
+    _birthdayTextField.inputView = picker;
+}
+
+/**
+ *  当UIDatePicker滚动的时候调用给生日文本框赋值
+ */
+- (void)dateChange:(UIDatePicker *)datePicker
+{
+    NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
+    
+    fmt.dateFormat = @"yyyy-MM-dd";
+    
+    NSString *dateStr = [fmt stringFromDate:datePicker.date];
+    
+    _birthdayTextField.text = dateStr;
+}
+
 
 #pragma mark - 注册用户
 - (IBAction)registerUser {
@@ -110,6 +149,14 @@
     
     self.keyboardTool.previousItem.enabled = (currentIndex != 0);
     self.keyboardTool.nextItem.enabled = (currentIndex != self.textFields.count - 1);
+    
+    // 给生日文本框赋值
+    [self dateChange:_datePicker];
+}
+
+// 是否允许用户输入文字
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    return NO;
 }
 
 #pragma mark - 结束第一响应者

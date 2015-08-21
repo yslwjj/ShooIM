@@ -10,6 +10,7 @@
 #import "SAMRegisterViewController.h"
 #import "SAMKeyboardTool.h"
 #import "SAMMainViewController.h"
+#import "SAMNavgationController.h"
 
 @interface SAMLoginViewController ()<UITextFieldDelegate,SAMKeyboardToolDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *mailTextField;
@@ -39,7 +40,6 @@
     // 進入註冊界面
     SAMRegisterViewController *registerVC = [[SAMRegisterViewController alloc] init];
     [self.navigationController pushViewController:registerVC animated:YES];
-
 }
 
 #pragma mark - 忘記密碼
@@ -51,7 +51,7 @@
 #pragma mark - 登錄
 
 - (IBAction)login {
-    SAMMainViewController * main = [[SAMMainViewController alloc] init];
+    SAMMainViewController *main = [[SAMMainViewController alloc] init];
     [self.navigationController pushViewController:main animated:YES];
     main.navigationItem.leftBarButtonItem.customView = [[UIView alloc] init];
 }

@@ -8,7 +8,7 @@
 
 #import "SAMMainViewController.h"
 
-@interface SAMMainViewController ()
+@interface SAMMainViewController ()<UIGestureRecognizerDelegate>
 
 @end
 
