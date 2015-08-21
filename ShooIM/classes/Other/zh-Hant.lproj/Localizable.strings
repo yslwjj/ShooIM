@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  ShooIM
+
+  Created by 杨森 on 15/8/21.
+  Copyright (c) 2015年 samyang. All rights reserved.
+*/
+"Login Success"  ="登入成功";
+"Loading"  = "資料加載中";
+"Logout" ="登    出";
+"Registered!" ="註冊成功";
+"Register error"= "email或手機號已被使用";
+"error" ="程式錯誤";
+"Veat login Fail"="帳號或密碼錯誤!";
+"Network connecting fail"="網路發生錯誤!";
+"Please relogin!" ="會員資料錯誤!請重新登入";

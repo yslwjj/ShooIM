@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="4Pm-23-UHE" customClass="SAMKeyboardTool">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <items>
+                <barButtonItem title="上一项" id="4Sx-Gb-VZp">
+                    <connections>
+                        <action selector="previous:" destination="4Pm-23-UHE" id="3O3-yf-s9U"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem title="下一项" id="hB8-yk-xeP">
+                    <connections>
+                        <action selector="next:" destination="4Pm-23-UHE" id="PMI-ue-J0I"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="Owm-Y5-eoy"/>
+                <barButtonItem title="完成" id="Omo-cX-eHf">
+                    <connections>
+                        <action selector="done:" destination="4Pm-23-UHE" id="Rce-tS-H7X"/>
+                    </connections>
+                </barButtonItem>
+            </items>
+            <connections>
+                <outlet property="nextItem" destination="hB8-yk-xeP" id="q8k-vi-Nr2"/>
+                <outlet property="previousItem" destination="4Sx-Gb-VZp" id="LHQ-Pk-hYG"/>
+            </connections>
+            <point key="canvasLocation" x="196" y="207"/>
+        </toolbar>
+    </objects>
+</document>
