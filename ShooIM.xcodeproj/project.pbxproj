@@ -7,13 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		450ED13C1B86171D00519C0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 450ED13B1B86171D00519C0C /* main.m */; };
-		450ED13F1B86171D00519C0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 450ED13E1B86171D00519C0C /* AppDelegate.m */; };
-		450ED1421B86171D00519C0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450ED1411B86171D00519C0C /* ViewController.m */; };
-		450ED1451B86171D00519C0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450ED1431B86171D00519C0C /* Main.storyboard */; };
 		450ED1471B86171D00519C0C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450ED1461B86171D00519C0C /* Images.xcassets */; };
 		450ED14A1B86171D00519C0C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 450ED1481B86171D00519C0C /* LaunchScreen.xib */; };
 		450ED1561B86171D00519C0C /* ShooIMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 450ED1551B86171D00519C0C /* ShooIMTests.m */; };
+		450ED2801B862A5800519C0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 450ED2771B862A5800519C0C /* AppDelegate.m */; };
+		450ED2811B862A5800519C0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 450ED2791B862A5800519C0C /* main.m */; };
+		450ED2841B862B3000519C0C /* SAMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450ED2831B862B3000519C0C /* SAMLoginViewController.m */; };
+		450ED2861B862B4900519C0C /* SAMLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450ED2851B862B4900519C0C /* SAMLoginViewController.storyboard */; };
+		450ED54F1B8638D800519C0C /* UIButton+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 450ED54A1B8638D800519C0C /* UIButton+SAMExtension.m */; };
+		450ED5501B8638D800519C0C /* UIImage+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 450ED54C1B8638D800519C0C /* UIImage+SAMExtension.m */; };
+		450ED5511B8638D800519C0C /* UIView+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 450ED54E1B8638D800519C0C /* UIView+SAMExtension.m */; };
+		450ED55A1B863AE400519C0C /* SAMGuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 450ED5591B863AE400519C0C /* SAMGuideTool.m */; };
+		450ED5611B863CF300519C0C /* SAMNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450ED5601B863CF300519C0C /* SAMNavgationController.m */; };
+		450ED5641B863FB700519C0C /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 450ED5631B863FB700519C0C /* Foundation+Log.m */; };
+		450ED5681B864F1800519C0C /* SAMRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450ED5661B864F1800519C0C /* SAMRegisterViewController.m */; };
+		450ED5691B864F1800519C0C /* 備用SAMRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 450ED5671B864F1800519C0C /* 備用SAMRegisterViewController.xib */; };
+		45B0CBA11B86C78A0072E0E2 /* SAMVEATViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0CB9F1B86C78A0072E0E2 /* SAMVEATViewController.m */; };
+		45B0CBA21B86C78A0072E0E2 /* SAMVEATViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B0CBA01B86C78A0072E0E2 /* SAMVEATViewController.xib */; };
+		45B0CBA41B86CB0A0072E0E2 /* SAMRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B0CBA31B86CB0A0072E0E2 /* SAMRegisterViewController.xib */; };
+		45B0CBA91B8705E40072E0E2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45B0CBAB1B8705E40072E0E2 /* Localizable.strings */; };
+		45B0CBB81B8723E90072E0E2 /* SAMKeyboardTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0CBB71B8723E90072E0E2 /* SAMKeyboardTool.m */; };
+		45B0CBBA1B8723F80072E0E2 /* SAMKeyboardTool.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B0CBB91B8723F80072E0E2 /* SAMKeyboardTool.xib */; };
+		45B0CBBE1B8735330072E0E2 /* SAMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0CBBC1B8735330072E0E2 /* SAMMainViewController.m */; };
+		45B0CBBF1B8735330072E0E2 /* SAMMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B0CBBD1B8735330072E0E2 /* SAMMainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,17 +45,47 @@
 /* Begin PBXFileReference section */
 		450ED1361B86171D00519C0C /* ShooIM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShooIM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		450ED13A1B86171D00519C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		450ED13B1B86171D00519C0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		450ED13D1B86171D00519C0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		450ED13E1B86171D00519C0C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		450ED1401B86171D00519C0C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		450ED1411B86171D00519C0C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		450ED1441B86171D00519C0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		450ED1461B86171D00519C0C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		450ED1491B86171D00519C0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		450ED14F1B86171D00519C0C /* ShooIMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShooIMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		450ED1541B86171D00519C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		450ED1551B86171D00519C0C /* ShooIMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShooIMTests.m; sourceTree = "<group>"; };
+		450ED2761B862A5800519C0C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		450ED2771B862A5800519C0C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		450ED2791B862A5800519C0C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		450ED2821B862B3000519C0C /* SAMLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMLoginViewController.h; sourceTree = "<group>"; };
+		450ED2831B862B3000519C0C /* SAMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMLoginViewController.m; sourceTree = "<group>"; };
+		450ED2851B862B4900519C0C /* SAMLoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SAMLoginViewController.storyboard; sourceTree = "<group>"; };
+		450ED5491B8638D800519C0C /* UIButton+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SAMExtension.h"; sourceTree = "<group>"; };
+		450ED54A1B8638D800519C0C /* UIButton+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SAMExtension.m"; sourceTree = "<group>"; };
+		450ED54B1B8638D800519C0C /* UIImage+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SAMExtension.h"; sourceTree = "<group>"; };
+		450ED54C1B8638D800519C0C /* UIImage+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SAMExtension.m"; sourceTree = "<group>"; };
+		450ED54D1B8638D800519C0C /* UIView+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SAMExtension.h"; sourceTree = "<group>"; };
+		450ED54E1B8638D800519C0C /* UIView+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SAMExtension.m"; sourceTree = "<group>"; };
+		450ED5581B863AE400519C0C /* SAMGuideTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMGuideTool.h; sourceTree = "<group>"; };
+		450ED5591B863AE400519C0C /* SAMGuideTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMGuideTool.m; sourceTree = "<group>"; };
+		450ED55F1B863CF300519C0C /* SAMNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMNavgationController.h; sourceTree = "<group>"; };
+		450ED5601B863CF300519C0C /* SAMNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMNavgationController.m; sourceTree = "<group>"; };
+		450ED5621B863E0100519C0C /* SAMPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMPrefixHeader.pch; sourceTree = "<group>"; };
+		450ED5631B863FB700519C0C /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		450ED5651B864F1800519C0C /* SAMRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMRegisterViewController.h; sourceTree = "<group>"; };
+		450ED5661B864F1800519C0C /* SAMRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMRegisterViewController.m; sourceTree = "<group>"; };
+		450ED5671B864F1800519C0C /* 備用SAMRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "備用SAMRegisterViewController.xib"; sourceTree = "<group>"; };
+		45B0CB9E1B86C78A0072E0E2 /* SAMVEATViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMVEATViewController.h; sourceTree = "<group>"; };
+		45B0CB9F1B86C78A0072E0E2 /* SAMVEATViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMVEATViewController.m; sourceTree = "<group>"; };
+		45B0CBA01B86C78A0072E0E2 /* SAMVEATViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMVEATViewController.xib; sourceTree = "<group>"; };
+		45B0CBA31B86CB0A0072E0E2 /* SAMRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMRegisterViewController.xib; sourceTree = "<group>"; };
+		45B0CBAA1B8705E40072E0E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		45B0CBAC1B8706300072E0E2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		45B0CBAD1B8706300072E0E2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		45B0CBAE1B87063A0072E0E2 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		45B0CBAF1B87063A0072E0E2 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		45B0CBB61B8723E90072E0E2 /* SAMKeyboardTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeyboardTool.h; sourceTree = "<group>"; };
+		45B0CBB71B8723E90072E0E2 /* SAMKeyboardTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMKeyboardTool.m; sourceTree = "<group>"; };
+		45B0CBB91B8723F80072E0E2 /* SAMKeyboardTool.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMKeyboardTool.xib; sourceTree = "<group>"; };
+		45B0CBBB1B8735330072E0E2 /* SAMMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMMainViewController.h; sourceTree = "<group>"; };
+		45B0CBBC1B8735330072E0E2 /* SAMMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMMainViewController.m; sourceTree = "<group>"; };
+		45B0CBBD1B8735330072E0E2 /* SAMMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMMainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +127,7 @@
 		450ED1381B86171D00519C0C /* ShooIM */ = {
 			isa = PBXGroup;
 			children = (
-				450ED13D1B86171D00519C0C /* AppDelegate.h */,
-				450ED13E1B86171D00519C0C /* AppDelegate.m */,
-				450ED1401B86171D00519C0C /* ViewController.h */,
-				450ED1411B86171D00519C0C /* ViewController.m */,
-				450ED1431B86171D00519C0C /* Main.storyboard */,
+				450ED24A1B862A5800519C0C /* classes */,
 				450ED1461B86171D00519C0C /* Images.xcassets */,
 				450ED1481B86171D00519C0C /* LaunchScreen.xib */,
 				450ED1391B86171D00519C0C /* Supporting Files */,
@@ -97,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				450ED13A1B86171D00519C0C /* Info.plist */,
-				450ED13B1B86171D00519C0C /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +158,493 @@
 				450ED1541B86171D00519C0C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		450ED24A1B862A5800519C0C /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				450ED55B1B863CCF00519C0C /* Nav */,
+				450ED5521B86399C00519C0C /* Tools */,
+				450ED24C1B862A5800519C0C /* Login */,
+				450ED24B1B862A5800519C0C /* lib */,
+				450ED2501B862A5800519C0C /* Main */,
+				450ED27C1B862A5800519C0C /* register */,
+				450ED2751B862A5800519C0C /* Other */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		450ED24B1B862A5800519C0C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		450ED24C1B862A5800519C0C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				450ED24D1B862A5800519C0C /* Controller */,
+				450ED24E1B862A5800519C0C /* Model */,
+				450ED24F1B862A5800519C0C /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		450ED24D1B862A5800519C0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				450ED2821B862B3000519C0C /* SAMLoginViewController.h */,
+				450ED2831B862B3000519C0C /* SAMLoginViewController.m */,
+				450ED2851B862B4900519C0C /* SAMLoginViewController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		450ED24E1B862A5800519C0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		450ED24F1B862A5800519C0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		450ED2501B862A5800519C0C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				450ED2511B862A5800519C0C /* AddFriend */,
+				450ED2551B862A5800519C0C /* Friend */,
+				450ED2591B862A5800519C0C /* Group */,
+				450ED25D1B862A5800519C0C /* Map */,
+				450ED2611B862A5800519C0C /* Message */,
+				450ED2651B862A5800519C0C /* OfficialAccount */,
+				450ED2691B862A5800519C0C /* Setting */,
+				450ED26D1B862A5800519C0C /* SHOONotice */,
+				450ED2711B862A5800519C0C /* Shop */,
+				45B0CBBB1B8735330072E0E2 /* SAMMainViewController.h */,
+				45B0CBBC1B8735330072E0E2 /* SAMMainViewController.m */,
+				45B0CBBD1B8735330072E0E2 /* SAMMainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		450ED2511B862A5800519C0C /* AddFriend */ = {
+			isa = PBXGroup;
+			children = (
+				450ED2521B862A5800519C0C /* Controller */,
+				450ED2531B862A5800519C0C /* Model */,
+				450ED2541B862A5800519C0C /* View */,
+			);
+			path = AddFriend;
+			sourceTree = "<group>";
+		};
+		450ED2521B862A5800519C0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		450ED2531B862A5800519C0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		450ED2541B862A5800519C0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		450ED2551B862A5800519C0C /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				450ED2561B862A5800519C0C /* Controller */,
+				450ED2571B862A5800519C0C /* Model */,
+				450ED2581B862A5800519C0C /* View */,
+			);
+			path = Friend;
+			sourceTree = "<group>";
+		};
+		450ED2561B862A5800519C0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		450ED2571B862A5800519C0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		450ED2581B862A5800519C0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		450ED2591B862A5800519C0C /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				450ED25A1B862A5800519C0C /* Controller */,
+				450ED25B1B862A5800519C0C /* Model */,
+				450ED25C1B862A5800519C0C /* View */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		450ED25A1B862A5800519C0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		450ED25B1B862A5800519C0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		450ED25C1B862A5800519C0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		450ED25D1B862A5800519C0C /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				450ED25E1B862A5800519C0C /* Controller */,
+				450ED25F1B862A5800519C0C /* Model */,
+				450ED2601B862A5800519C0C /* View */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		450ED25E1B862A5800519C0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		450ED25F1B862A5800519C0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		450ED2601B862A5800519C0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		450ED2611B862A5800519C0C /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				450ED2621B862A5800519C0C /* Controller */,
+				450ED2631B862A5800519C0C /* Model */,
+				450ED2641B862A5800519C0C /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		450ED2621B862A5800519C0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		450ED2631B862A5800519C0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		450ED2641B862A5800519C0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		450ED2651B862A5800519C0C /* OfficialAccount */ = {
+			isa = PBXGroup;
+			children = (
+				450ED2661B862A5800519C0C /* Controller */,
+				450ED2671B862A5800519C0C /* Model */,
+				450ED2681B862A5800519C0C /* View */,
+			);
+			path = OfficialAccount;
+			sourceTree = "<group>";
+		};
+		450ED2661B862A5800519C0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		450ED2671B862A5800519C0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		450ED2681B862A5800519C0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		450ED2691B862A5800519C0C /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				450ED26A1B862A5800519C0C /* Controller */,
+				450ED26B1B862A5800519C0C /* Model */,
+				450ED26C1B862A5800519C0C /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		450ED26A1B862A5800519C0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		450ED26B1B862A5800519C0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		450ED26C1B862A5800519C0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		450ED26D1B862A5800519C0C /* SHOONotice */ = {
+			isa = PBXGroup;
+			children = (
+				450ED26E1B862A5800519C0C /* Controller */,
+				450ED26F1B862A5800519C0C /* Model */,
+				450ED2701B862A5800519C0C /* View */,
+			);
+			path = SHOONotice;
+			sourceTree = "<group>";
+		};
+		450ED26E1B862A5800519C0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		450ED26F1B862A5800519C0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		450ED2701B862A5800519C0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		450ED2711B862A5800519C0C /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				450ED2721B862A5800519C0C /* Controller */,
+				450ED2731B862A5800519C0C /* Model */,
+				450ED2741B862A5800519C0C /* View */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		450ED2721B862A5800519C0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		450ED2731B862A5800519C0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		450ED2741B862A5800519C0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		450ED2751B862A5800519C0C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				450ED5481B8638D800519C0C /* Category */,
+				450ED2761B862A5800519C0C /* AppDelegate.h */,
+				450ED2771B862A5800519C0C /* AppDelegate.m */,
+				450ED2791B862A5800519C0C /* main.m */,
+				450ED5631B863FB700519C0C /* Foundation+Log.m */,
+				450ED5621B863E0100519C0C /* SAMPrefixHeader.pch */,
+				45B0CBAB1B8705E40072E0E2 /* Localizable.strings */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		450ED27C1B862A5800519C0C /* register */ = {
+			isa = PBXGroup;
+			children = (
+				450ED27D1B862A5800519C0C /* Controller */,
+				450ED27E1B862A5800519C0C /* Model */,
+				450ED27F1B862A5800519C0C /* View */,
+			);
+			path = register;
+			sourceTree = "<group>";
+		};
+		450ED27D1B862A5800519C0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				450ED5651B864F1800519C0C /* SAMRegisterViewController.h */,
+				450ED5661B864F1800519C0C /* SAMRegisterViewController.m */,
+				45B0CBA31B86CB0A0072E0E2 /* SAMRegisterViewController.xib */,
+				45B0CB9E1B86C78A0072E0E2 /* SAMVEATViewController.h */,
+				45B0CB9F1B86C78A0072E0E2 /* SAMVEATViewController.m */,
+				45B0CBA01B86C78A0072E0E2 /* SAMVEATViewController.xib */,
+				450ED5671B864F1800519C0C /* 備用SAMRegisterViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		450ED27E1B862A5800519C0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		450ED27F1B862A5800519C0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		450ED5481B8638D800519C0C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				450ED5491B8638D800519C0C /* UIButton+SAMExtension.h */,
+				450ED54A1B8638D800519C0C /* UIButton+SAMExtension.m */,
+				450ED54B1B8638D800519C0C /* UIImage+SAMExtension.h */,
+				450ED54C1B8638D800519C0C /* UIImage+SAMExtension.m */,
+				450ED54D1B8638D800519C0C /* UIView+SAMExtension.h */,
+				450ED54E1B8638D800519C0C /* UIView+SAMExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		450ED5521B86399C00519C0C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				45B0CBB21B87167F0072E0E2 /* keyboard */,
+				450ED5561B863A3300519C0C /* Guide */,
+				450ED5571B863A3300519C0C /* Save */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		450ED5561B863A3300519C0C /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				450ED5581B863AE400519C0C /* SAMGuideTool.h */,
+				450ED5591B863AE400519C0C /* SAMGuideTool.m */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		450ED5571B863A3300519C0C /* Save */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Save;
+			sourceTree = "<group>";
+		};
+		450ED55B1B863CCF00519C0C /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				450ED55C1B863CCF00519C0C /* Controller */,
+				450ED55D1B863CCF00519C0C /* Model */,
+				450ED55E1B863CCF00519C0C /* View */,
+			);
+			path = Nav;
+			sourceTree = "<group>";
+		};
+		450ED55C1B863CCF00519C0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				450ED55F1B863CF300519C0C /* SAMNavgationController.h */,
+				450ED5601B863CF300519C0C /* SAMNavgationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		450ED55D1B863CCF00519C0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		450ED55E1B863CCF00519C0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		45B0CBB21B87167F0072E0E2 /* keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				45B0CBB61B8723E90072E0E2 /* SAMKeyboardTool.h */,
+				45B0CBB71B8723E90072E0E2 /* SAMKeyboardTool.m */,
+				45B0CBB91B8723F80072E0E2 /* SAMKeyboardTool.xib */,
+			);
+			path = keyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +691,7 @@
 		450ED12E1B86171D00519C0C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SAM;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = samyang;
 				TargetAttributes = {
@@ -182,6 +711,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 450ED12D1B86171D00519C0C;
 			productRefGroup = 450ED1371B86171D00519C0C /* Products */;
@@ -199,9 +730,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				450ED1451B86171D00519C0C /* Main.storyboard in Resources */,
 				450ED14A1B86171D00519C0C /* LaunchScreen.xib in Resources */,
+				45B0CBA41B86CB0A0072E0E2 /* SAMRegisterViewController.xib in Resources */,
 				450ED1471B86171D00519C0C /* Images.xcassets in Resources */,
+				45B0CBBF1B8735330072E0E2 /* SAMMainViewController.xib in Resources */,
+				45B0CBA91B8705E40072E0E2 /* Localizable.strings in Resources */,
+				45B0CBBA1B8723F80072E0E2 /* SAMKeyboardTool.xib in Resources */,
+				450ED5691B864F1800519C0C /* 備用SAMRegisterViewController.xib in Resources */,
+				45B0CBA21B86C78A0072E0E2 /* SAMVEATViewController.xib in Resources */,
+				450ED2861B862B4900519C0C /* SAMLoginViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +756,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				450ED1421B86171D00519C0C /* ViewController.m in Sources */,
-				450ED13F1B86171D00519C0C /* AppDelegate.m in Sources */,
-				450ED13C1B86171D00519C0C /* main.m in Sources */,
+				45B0CBB81B8723E90072E0E2 /* SAMKeyboardTool.m in Sources */,
+				45B0CBA11B86C78A0072E0E2 /* SAMVEATViewController.m in Sources */,
+				450ED5501B8638D800519C0C /* UIImage+SAMExtension.m in Sources */,
+				45B0CBBE1B8735330072E0E2 /* SAMMainViewController.m in Sources */,
+				450ED2841B862B3000519C0C /* SAMLoginViewController.m in Sources */,
+				450ED54F1B8638D800519C0C /* UIButton+SAMExtension.m in Sources */,
+				450ED5681B864F1800519C0C /* SAMRegisterViewController.m in Sources */,
+				450ED55A1B863AE400519C0C /* SAMGuideTool.m in Sources */,
+				450ED2801B862A5800519C0C /* AppDelegate.m in Sources */,
+				450ED5641B863FB700519C0C /* Foundation+Log.m in Sources */,
+				450ED5511B8638D800519C0C /* UIView+SAMExtension.m in Sources */,
+				450ED2811B862A5800519C0C /* main.m in Sources */,
+				450ED5611B863CF300519C0C /* SAMNavgationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,20 +791,24 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		450ED1431B86171D00519C0C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				450ED1441B86171D00519C0C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		450ED1481B86171D00519C0C /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				450ED1491B86171D00519C0C /* Base */,
+				45B0CBAC1B8706300072E0E2 /* zh-Hans */,
+				45B0CBAE1B87063A0072E0E2 /* zh-Hant */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		45B0CBAB1B8705E40072E0E2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45B0CBAA1B8705E40072E0E2 /* en */,
+				45B0CBAD1B8706300072E0E2 /* zh-Hans */,
+				45B0CBAF1B87063A0072E0E2 /* zh-Hant */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -347,7 +898,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)//ShooIM/classes/Other/SAMPrefixHeader.pch";
 				INFOPLIST_FILE = ShooIM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,7 +910,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)//ShooIM/classes/Other/SAMPrefixHeader.pch";
 				INFOPLIST_FILE = ShooIM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +971,7 @@
 				450ED15B1B86171D00519C0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		450ED15C1B86171D00519C0C /* Build configuration list for PBXNativeTarget "ShooIMTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +980,7 @@
 				450ED15E1B86171D00519C0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
