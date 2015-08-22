@@ -11,6 +11,11 @@
 #import "SAMKeyboardTool.h"
 #import "SAMMainViewController.h"
 #import "SAMNavgationController.h"
+#import <AFNetworking.h>
+#import <MJExtension.h>
+#import "SAMLogin.h"
+
+
 
 @interface SAMLoginViewController ()<UITextFieldDelegate,SAMKeyboardToolDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *mailTextField;
@@ -51,9 +56,67 @@
 #pragma mark - 登錄
 
 - (IBAction)login {
-    SAMMainViewController *main = [[SAMMainViewController alloc] init];
-    [self.navigationController pushViewController:main animated:YES];
-    main.navigationItem.leftBarButtonItem.customView = [[UIView alloc] init];
+    
+    [self requestLogin];
+
+}
+
+#pragma mark - 网络登录请求
+- (void)requestLogin
+{
+    [MBProgressHUD showMessage:nil];
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    manager.responseSerializer.acceptableContentTypes=[manager.responseSerializer.acceptableContentTypes setByAddingObject:@"text/html"];
+    
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    
+    params[@"email"] = self.mailTextField.text;
+    params[@"password"] = self.pwdTextField.text.md5String;
+    
+    NSString *webAddress = [NSString stringWithFormat:@"%@%@",webServiceName,@"FmemberLogin.asp"];
+    
+    
+    [manager POST:webAddress parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"%@",responseObject);
+        [MBProgressHUD hideHUD];
+        SAMLogin *login = [SAMLogin objectWithKeyValues:responseObject[@"im_token"]];
+        login.state = responseObject[@"state"];
+        
+        if ([login.state isEqualToString:@"0"]) {
+            [MBProgressHUD showSuccess:@"登錄成功"];
+            
+            // 寫入沙盒
+            [SAMCommon setIMToken:login.token];
+            [SAMCommon setUserName:self.mailTextField.text pwd:self.pwdTextField.text.md5String];
+            [SAMCommon setLoginStatus];
+            
+            // 跳轉到主控制器
+            [SAMCommon MoveToMainViewController];
+            
+        } else if ([login.state isEqualToString:@"1"]){
+            [MBProgressHUD showError:@"Email尚未註冊"];
+        } else if ([login.state isEqualToString:@"2"]){
+            [MBProgressHUD showError:@"密碼錯誤"];
+        } else {
+            [MBProgressHUD showError:@"登錄錯誤"];
+        }
+
+        SAMLog(@"%@--%@--%@",login.state,login.token,login.userId);
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        [MBProgressHUD hideHUD];
+        
+        if (![SAMCommon connectedToNetwork]) {
+            [MBProgressHUD showError:@"網絡連接錯誤"];
+        } else {
+            [MBProgressHUD showError:@"登錄錯誤"];
+        }
+        
+    }];
+    
 }
 
 #pragma mark - 键盘工具栏的代理方法

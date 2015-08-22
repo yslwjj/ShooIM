@@ -44,23 +44,9 @@
 #pragma mark - 手势代理方法
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
 {
-    return (![self.topViewController isKindOfClass:[SAMMainViewController class]]);
+    return (self.topViewController != [self.viewControllers firstObject]);
 }
 
-
-- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
-{
-    // 设置导航条左边按钮的内容,把系统的返回按钮给覆盖,导航控制器的滑动返回功能就木有啦
-    viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleBordered target:self action:@selector(back)];
-    
-    [super pushViewController:viewController animated:animated];
-}
-
-
-- (void)back
-{
-    [self popViewControllerAnimated:YES];
-}
 
 
 @end

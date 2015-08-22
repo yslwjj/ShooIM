@@ -10,6 +10,8 @@
 #define ShooIM_SAMPrefixHeader_pch
 
 #import "MBProgressHUD+SAM.h"
+#import "NSString+Hash.h"
+#import "SAMCommon.h"
 
 #ifdef DEBUG
 #define SAMLog(...) NSLog(__VA_ARGS__)
@@ -23,5 +25,8 @@
 
 #define SAMScreenW [UIScreen mainScreen].bounds.size.width
 #define SAMScreenH [UIScreen mainScreen].bounds.size.height
+
+#define webServiceName @"http://vp-kkaa666-003.ticp.net/im/"
+#define SAMKeyWindow [UIApplication sharedApplication].keyWindow
 
 #endif

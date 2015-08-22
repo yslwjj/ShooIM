@@ -35,6 +35,8 @@
 		45B0CBCB1B8772430072E0E2 /* MBProgressHUD+SAM.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0CBC71B8772430072E0E2 /* MBProgressHUD+SAM.m */; };
 		45B0CBCC1B8772430072E0E2 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 45B0CBC81B8772430072E0E2 /* MBProgressHUD.bundle */; };
 		45B0CBCD1B8772430072E0E2 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0CBCA1B8772430072E0E2 /* MBProgressHUD.m */; };
+		45B0CBD11B87844A0072E0E2 /* SAMCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B0CBD01B87844A0072E0E2 /* SAMCommon.m */; };
+		45D13FCF1B887BDB000C656A /* SAMLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D13FCE1B887BDB000C656A /* SAMLogin.m */; };
 		85191B25C804D38ECD9F9EFD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F204345F797B620B2D2C0AD /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +103,10 @@
 		45B0CBC81B8772430072E0E2 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		45B0CBC91B8772430072E0E2 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		45B0CBCA1B8772430072E0E2 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		45B0CBCF1B87844A0072E0E2 /* SAMCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMCommon.h; sourceTree = "<group>"; };
+		45B0CBD01B87844A0072E0E2 /* SAMCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMCommon.m; sourceTree = "<group>"; };
+		45D13FCD1B887BDB000C656A /* SAMLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMLogin.h; sourceTree = "<group>"; };
+		45D13FCE1B887BDB000C656A /* SAMLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMLogin.m; sourceTree = "<group>"; };
 		687AA2AF34C3769D2D53ED3A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F78B3D547032E4659E7F97B6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,6 +231,8 @@
 		450ED24E1B862A5800519C0C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				45D13FCD1B887BDB000C656A /* SAMLogin.h */,
+				45D13FCE1B887BDB000C656A /* SAMLogin.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -605,6 +613,7 @@
 		450ED5521B86399C00519C0C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				45B0CBCE1B87843B0072E0E2 /* common */,
 				45B0CBB21B87167F0072E0E2 /* keyboard */,
 				450ED5561B863A3300519C0C /* Guide */,
 				450ED5571B863A3300519C0C /* Save */,
@@ -682,6 +691,15 @@
 			);
 			name = MBProgressHUD;
 			path = ../Other/Category/MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		45B0CBCE1B87843B0072E0E2 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				45B0CBCF1B87844A0072E0E2 /* SAMCommon.h */,
+				45B0CBD01B87844A0072E0E2 /* SAMCommon.m */,
+			);
+			path = common;
 			sourceTree = "<group>";
 		};
 		53F246BD97BD459EF00157B9 /* Pods */ = {
@@ -846,10 +864,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45B0CBD11B87844A0072E0E2 /* SAMCommon.m in Sources */,
 				45B0CBB81B8723E90072E0E2 /* SAMKeyboardTool.m in Sources */,
 				45B0CBA11B86C78A0072E0E2 /* SAMVEATViewController.m in Sources */,
 				450ED5501B8638D800519C0C /* UIImage+SAMExtension.m in Sources */,
 				45B0CBBE1B8735330072E0E2 /* SAMMainViewController.m in Sources */,
+				45D13FCF1B887BDB000C656A /* SAMLogin.m in Sources */,
 				450ED2841B862B3000519C0C /* SAMLoginViewController.m in Sources */,
 				450ED54F1B8638D800519C0C /* UIButton+SAMExtension.m in Sources */,
 				450ED5681B864F1800519C0C /* SAMRegisterViewController.m in Sources */,
