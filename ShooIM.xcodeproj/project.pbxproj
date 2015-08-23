@@ -140,6 +140,7 @@
 				F32884FA919CE92182E3C072 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			wrapsLines = 0;
 		};
 		450ED1371B86171D00519C0C /* Products */ = {
 			isa = PBXGroup;
